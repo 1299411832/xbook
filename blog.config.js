@@ -6,9 +6,9 @@ const BLOG = {
   NOTION_PAGE_ID:
     process.env.NOTION_PAGE_ID ||
     '02ab3b8678004aa69e9e415905ef32a5,en:7c1d570661754c8fbc568e00a01fd70e',
-  THEME: process.env.NEXT_PUBLIC_THEME || 'simple', // 当前主题，在themes文件夹下可找到所有支持的主题；主题名称就是文件夹名，例如 claude,endspace,example,fukasawa,fuwari,gitbook,heo,hexo,landing,matery,medium,next,nobelium,plog,simple
+  THEME: process.env.NEXT_PUBLIC_THEME || 'claude', // 当前主题，在themes文件夹下可找到所有支持的主题；主题名称就是文件夹名，例如 claude,endspace,example,fukasawa,fuwari,gitbook,heo,hexo,landing,matery,medium,next,nobelium,plog,simple
   LANG: process.env.NEXT_PUBLIC_LANG || 'zh-CN', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
-  SINCE: process.env.NEXT_PUBLIC_SINCE || 2021, // e.g if leave this empty, current year will be used.
+  SINCE: process.env.NEXT_PUBLIC_SINCE || 2026, // e.g if leave this empty, current year will be used.
 
   PSEUDO_STATIC: process.env.NEXT_PUBLIC_PSEUDO_STATIC || false, // 伪静态路径，开启后所有文章URL都以 .html 结尾。
   NEXT_REVALIDATE_SECOND: process.env.NEXT_PUBLIC_REVALIDATE_SECOND || 60, // 更新缓存间隔 单位(秒)；即每个页面有60秒的纯静态期、此期间无论多少次访问都不会抓取notion数据；调大该值有助于节省Vercel资源、同时提升访问速率，但也会使文章更新有延迟。
@@ -16,10 +16,10 @@ const BLOG = {
   APPEARANCE: process.env.NEXT_PUBLIC_APPEARANCE || 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // 夜间模式起至时间，false时关闭根据时间自动切换夜间模式
 
-  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'NotionNext', // 您的昵称 例如 tangly1024
-  BIO: process.env.NEXT_PUBLIC_BIO || '一个普通的干饭人🍚', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://tangly1024.com', // 网站地址
-  KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '观棋marketing', // 您的昵称 例如 tangly1024
+  BIO: process.env.NEXT_PUBLIC_BIO || '专注流量增长，贯彻营销底层逻辑……，更多内容在同名公众号「观棋marketing」上', // 作者简介
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://billow.icu', // 网站地址
+  KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '营销,市场营销,内容营销,数字营销,数字化营销,网络营销,线上营销,整合营销,品牌营销,营销策略,营销方案,营销策划,营销推广,营销渠道,新媒体营销,全渠道营销,内容营销是什么,内容营销的定义,内容营销策略,内容营销案例,内容营销怎么做,内容营销方法论,内容营销工具,内容营销公司,内容营销服务,内容营销策划方案,内容矩阵,内容矩阵搭建,内容运营,内容运营怎么做,内容规划,内容日历,内容排期,干货内容营销,故事化营销,品牌故事营销,UGC内容营销,用户生成内容,爆款内容,爆款文案,内容种草,种草营销,品牌内容化,内容变现,数字营销策略,网络推广,全网营销,精准营销,精准获客,私域营销,私域流量,私域运营,公域流量,公域引流,获客渠道,低成本获客,增长黑客,用户增长,用户画像,用户分层,转化率优化,营销自动化,小程序营销,H5营销,落地页优化,社交媒体营销,社媒营销,微博营销,微信公众号运营,小红书营销,小红书种草,小红书运营,抖音营销,抖音运营,抖音投放,快手营销,视频号运营,B站营销,知乎营销,社群营销,社群运营,朋友圈营销,达人营销,KOL营销,网红营销,素人营销,直播营销,直播带货,互动营销,话题营销,SEO优化,SEO优化教程,关键词优化,关键词排名,网站SEO,站内优化,站外优化,搜索引擎营销,SEM,竞价推广,百度推广,谷歌广告,信息流广告,效果广告,白帽SEO,黑帽SEO,SEO关键词布局,长尾关键词,外链建设,搜索引擎收录,网站权重提升,本地SEO,文案营销,软文营销,软文推广,视频营销,短视频营销,图文营销,音频营销,播客营销,电子书营销,白皮书营销,海报营销,长图营销,信息图营销,案例营销,客户案例,行业报告营销,邮件营销,EDM营销,品牌推广,品牌策划,品牌定位,品牌建设,品牌升级,品牌传播,品牌曝光,品牌声量,差异化营销,情感营销,情怀营销,借势营销,热点营销,节日营销,跨界营销,IP营销,事件营销,体验式营销,会员营销,忠诚度计划,病毒营销,裂变营销,饥饿营销,稀缺营销,场景营销,沉浸式营销,营销推广怎么做,内容营销有哪些形式,内容营销和广告营销的区别,中小企业如何做内容营销,B2B内容营销怎么做,内容营销如何做用户增长,内容营销KPI怎么定,内容营销ROI如何衡量,新手如何入门内容运营,内容营销岗位职责,营销策划案怎么写,营销方案模板,线上营销推广方法有哪些,品牌如何做私域运营,公众号涨粉技巧,小红书笔记怎么写才火,抖音起号方法,抖音如何快速涨粉,短视频脚本怎么写,直播带货话术,客户转化率低怎么办,获客成本高的原因,2026年营销趋势,营销行业报告,营销公司,内容营销代运营,新媒体代运营,跨境电商营销,海外营销,出海营销,外贸营销,餐饮营销,教育行业营销,美妆营销,电商营销,医疗营销,B2B营销', // 网站关键词 英文逗号隔开
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXX
   BEI_AN_LINK: process.env.NEXT_PUBLIC_BEI_AN_LINK || 'https://beian.miit.gov.cn/', // 备案查询链接，如果用了萌备等备案请在这里填写
